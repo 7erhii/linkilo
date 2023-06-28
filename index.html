@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>linkilo</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <a href="#" class="header__logo">
+          <img src="./img/LINKILO-LOGO.webp" alt="Company Logo" />
+        </a>
+
+        <div class="header__menu">
+          <ul class="header__list">
+            <li class="header__item">
+              <span>Home</span>
+              <div class="header__line"></div>
+            </li>
+            <li class="header__item header__item-js">
+              <span>Pricing</span>
+              <i class="fa-solid fa-chevron-down"></i>
+              <div class="header__dropdown header-dropdown-js">
+                <div
+                  class="header__dropdown-action header__dropdown-action--items-left"
+                >
+                  <a href="#" class="dropdown-btn dropdown-btn--black"
+                    >Go To Our Pricing Page</a
+                  >
+                </div>
+                <a class="header__dropdown-item">
+                  <div class="header__dropdown-img">
+                    <i class="fa-solid fa-tag"></i>
+                  </div>
+                  <div class="header__dropdown-text">
+                    <p class="header__dropdown-text-upper">Single Site</p>
+                    <p class="header__dropdown-text--bottom">
+                      Perfect for bloggers and site owners.
+                    </p>
+                  </div>
+                </a>
+                <a class="header__dropdown-item">
+                  <div class="header__dropdown-img">
+                    <i class="fa-solid fa-tag"></i>
+                  </div>
+                  <div class="header__dropdown-text">
+                    <p class="header__dropdown-text-upper">5 Sites</p>
+                    <p class="header__dropdown-text--bottom">
+                      Ideal for freelancers and affiliates.
+                    </p>
+                  </div>
+                </a>
+                <a class="header__dropdown-item">
+                  <div class="header__dropdown-img">
+                    <i class="fa-solid fa-tag"></i>
+                  </div>
+                  <div class="header__dropdown-text">
+                    <p class="header__dropdown-text-upper">25 Sites</p>
+                    <p class="header__dropdown-text--bottom">
+                      For SEO pros and affiliate scaling.
+                    </p>
+                  </div>
+                </a>
+                <a class="header__dropdown-item">
+                  <div class="header__dropdown-img">
+                    <i class="fa-solid fa-tag"></i>
+                  </div>
+                  <div class="header__dropdown-text">
+                    <p class="header__dropdown-text-upper">Unlimited Sites</p>
+                    <p class="header__dropdown-text--bottom">
+                      Great for agencies, PBN gurus, and big projects.
+                    </p>
+                  </div>
+                </a>
+                <div class="header__dropdown-action">
+                  <a href="#" class="dropdown-btn">Get Lifetime Deal</a>
+                  <span
+                    >*Limited<br />
+                    Time Only</span
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="header__item header__item-js">
+              <span>Features</span>
+              <i class="fa-solid fa-chevron-down"></i>
+              <div class="header__dropdown header-dropdown-js">
+                <a class="header__dropdown-item">
+                  <div class="header__dropdown-img">
+                    <i class="fas fa-chart-bar"></i>
+                  </div>
+                  <div class="header__dropdown-text">
+                    <p class="header__dropdown-text-upper">All Features</p>
+                    <p class="header__dropdown-text--bottom">
+                      Explore all functions.
+                    </p>
+                  </div>
+                </a>
+                <a class="header__dropdown-item">
+                  <div class="header__dropdown-img">
+                    <i class="fas fa-robot"></i>
+                  </div>
+                  <div class="header__dropdown-text">
+                    <p class="header__dropdown-text-upper">Auto Links</p>
+                    <p class="header__dropdown-text--bottom">
+                      Intelligent link suggestions.
+                    </p>
+                  </div>
+                </a>
+                <a class="header__dropdown-item">
+                  <div class="header__dropdown-img">
+                    <i class="fas fa-anchor"></i>
+                  </div>
+                  <div class="header__dropdown-text">
+                    <p class="header__dropdown-text-upper">
+                      Anchor Text Analysis
+                    </p>
+                    <p class="header__dropdown-text--bottom">
+                      Optimize anchor text for rankings.
+                    </p>
+                  </div>
+                </a>
+                <a class="header__dropdown-item">
+                  <div class="header__dropdown-img">
+                    <i class="fas fa-key"></i>
+                  </div>
+                  <div class="header__dropdown-text">
+                    <p class="header__dropdown-text-upper">
+                      Keyword Cannibalization Report Tool
+                    </p>
+                    <p class="header__dropdown-text--bottom">
+                      Solve keyword cannibalization for SEO.
+                    </p>
+                  </div>
+                </a>
+                <a class="header__dropdown-item">
+                  <div class="header__dropdown-img">
+                    <i class="fas fa-search"></i>
+                  </div>
+                  <div class="header__dropdown-text">
+                    <p class="header__dropdown-text-upper">
+                      Orphan Pages Tool & Reporting
+                    </p>
+                    <p class="header__dropdown-text--bottom">
+                      Uncover hidden challenges.
+                    </p>
+                  </div>
+                </a>
+                <a class="header__dropdown-item">
+                  <div class="header__dropdown-img">
+                    <i class="fas fa-lightbulb"></i>
+                  </div>
+                  <div class="header__dropdown-text">
+                    <p class="header__dropdown-text-upper">Link Preview Tool</p>
+                    <p class="header__dropdown-text--bottom">
+                      Enhance UX, boost performance.
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="header__item header__item-js">
+              <span>resources</span>
+              <i class="fa-solid fa-chevron-down"></i>
+              <div class="header__dropdown header-dropdown-js">
+                <div class="header__dropdown-blog">
+                  <h2>More info</h2>
+                  <a class="header__dropdown-item">
+                    <div class="header__dropdown-text">
+                      <p class="header__dropdown-text-upper">Blog</p>
+                      <p class="header__dropdown-text--bottom"></p>
+                    </div>
+                  </a>
+                  <a class="header__dropdown-item">
+                    <div class="header__dropdown-text">
+                      <p class="header__dropdown-text-upper">Knowledge Base</p>
+                      <p class="header__dropdown-text--bottom"></p>
+                    </div>
+                  </a>
+                  <a class="header__dropdown-item">
+                    <div class="header__dropdown-text">
+                      <p class="header__dropdown-text-upper">
+                        Feature Requests
+                      </p>
+                      <p class="header__dropdown-text--bottom"></p>
+                    </div>
+                  </a>
+                  <a class="header__dropdown-item">
+                    <div class="header__dropdown-text">
+                      <p class="header__dropdown-text-upper">Roadmap</p>
+                      <p class="header__dropdown-text--bottom"></p>
+                    </div>
+                  </a>
+                  <a class="header__dropdown-item">
+                    <div class="header__dropdown-text">
+                      <p class="header__dropdown-text-upper">Changelog</p>
+                      <p class="header__dropdown-text--bottom"></p>
+                    </div>
+                  </a>
+                </div>
+                <div class="header__dropdown-blog">
+                  <h2>Compare us</h2>
+
+                  <a class="header__dropdown-item">
+                    <div class="header__dropdown-text">
+                      <p class="header__dropdown-text-upper">
+                        Link Whisper vs Linkilo
+                      </p>
+                      <p class="header__dropdown-text--bottom"></p>
+                    </div>
+                  </a>
+                  <a class="header__dropdown-item">
+                    <div class="header__dropdown-text">
+                      <p class="header__dropdown-text-upper">
+                        Interlinks Manager vs Linkilo
+                      </p>
+                      <p class="header__dropdown-text--bottom"></p>
+                    </div>
+                  </a>
+                  <a class="header__dropdown-item">
+                    <div class="header__dropdown-text">
+                      <p class="header__dropdown-text-upper">
+                        Internal Link Juicer vs Linkilo
+                      </p>
+                      <p class="header__dropdown-text--bottom"></p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="header__item">
+              <span>Contact Us</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="header__actions">
+          <a href="#" class="header__btn">
+            <span>Sign In</span>
+          </a>
+          <div class="header__burger">
+            <svg
+              class="burger-btn burger-btn-js"
+              width="80"
+              height="52"
+              viewBox="0 0 40 26"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect class="burger-btn--1" width="40" height="6" rx="3" ry="3" />
+              <rect
+                class="burger-btn--2"
+                width="40"
+                height="6"
+                y="10"
+                rx="3"
+                ry="3"
+              />
+              <rect
+                class="burger-btn--3"
+                width="40"
+                height="6"
+                y="20"
+                rx="3"
+                ry="3"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="burger">
+        <div class="burger__container">
+          <div class="burger__item burger-item-js">
+            <a href="#" class="burger__line">
+              <h2>Home</h2>
+            </a>
+          </div>
+
+          <li class="burger__item burger-item-js">
+            <div class="burger__line">
+              <h2>Pricing</h2>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <ul class="burger__list burger-list-item-js">
+              <li>
+                <a href="#" class="burger__list-item">
+                  <div class="burger__list-item-img">
+                    <i class="fa-solid fa-tag"></i>
+                  </div>
+                  <div class="burger__list-item-text">
+                    <p>Single Site</p>
+                    <span> Perfect for bloggers and site owners.</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="burger__list-item">
+                  <div class="burger__list-item-img">
+                    <i class="fa-solid fa-tag"></i>
+                  </div>
+                  <div class="burger__list-item-text">
+                    <p>5 Sites</p>
+                    <span> Ideal for freelancers and affiliates. </span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="burger__list-item">
+                  <div class="burger__list-item-img">
+                    <i class="fa-solid fa-tag"></i>
+                  </div>
+                  <div class="burger__list-item-text">
+                    <p>25 Sites</p>
+                    <span> For SEO pros and affiliate scaling. </span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="burger__list-item">
+                  <div class="burger__list-item-img">
+                    <i class="fa-solid fa-tag"></i>
+                  </div>
+                  <div class="burger__list-item-text">
+                    <p>Unlimited Sites</p>
+                    <span
+                      >Great for agencies, PBN gurus, and big projects.</span
+                    >
+                  </div>
+                </a>
+              </li>
+              <li>
+                <div class="burger__list-item burger__list-item--with-btn">
+                  <a
+                    href="https://linkilo.co/linkilo-lifetime/"
+                    class="dropdown-btn dropdown-btn--wide"
+                    >Get Lifetime Deal</a
+                  >
+                  <span>*Limited Time Only</span>
+                </div>
+              </li>
+            </ul>
+          </li>
+
+          <li class="burger__item burger-item-js">
+            <div class="burger__line">
+              <h2>Features</h2>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <ul class="burger__list burger-list-item-js">
+              <li>
+                <a href="#" class="burger__list-item">
+                  <div class="burger__list-item-img">
+                    <i class="fas fa-chart-bar"></i>
+                  </div>
+                  <div
+                    class="burger__list-item-text burger__list-item-text--orange"
+                  >
+                    <p>All Features</p>
+                    <span> Explore all functions. </span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="burger__list-item">
+                  <div class="burger__list-item-img">
+                    <i class="fas fa-robot"></i>
+                  </div>
+                  <div
+                    class="burger__list-item-text burger__list-item-text--orange"
+                  >
+                    <p>Auto Links</p>
+                    <span> Intelligent link suggestions. </span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="burger__list-item">
+                  <div class="burger__list-item-img">
+                    <i class="fas fa-anchor"></i>
+                  </div>
+                  <div
+                    class="burger__list-item-text burger__list-item-text--orange"
+                  >
+                    <p>Anchor Text Analysis</p>
+                    <span> Optimize anchor text for rankings. </span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="burger__list-item">
+                  <div class="burger__list-item-img">
+                    <i class="fas fa-key"></i>
+                  </div>
+                  <div
+                    class="burger__list-item-text burger__list-item-text--orange"
+                  >
+                    <p>Keyword Cannibalization Report Tool</p>
+                    <span> Solve keyword cannibalization for SEO. </span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="burger__list-item">
+                  <div class="burger__list-item-img">
+                    <i class="fas fa-search"></i>
+                  </div>
+                  <div
+                    class="burger__list-item-text burger__list-item-text--orange"
+                  >
+                    <p>Orphan Pages Tool & Reporting</p>
+                    <span> Uncover hidden challenges. </span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="burger__list-item">
+                  <div class="burger__list-item-img">
+                    <i class="fas fa-lightbulb"></i>
+                  </div>
+                  <div
+                    class="burger__list-item-text burger__list-item-text--orange"
+                  >
+                    <p>Link Preview Tool</p>
+                    <span> Enhance UX, boost performance. </span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="burger__item burger-item-js">
+            <div class="burger__line">
+              <h2>resources</h2>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <ul class="burger__list burger-list-item-js">
+              <li>
+                <h3 class="burger__list-title">More info</h3>
+                <a href="#" class="burger__list-item">
+                  <div class="burger__list-item-img">
+                    <i class="fa-brands fa-microblog"></i>
+                  </div>
+                  <div
+                    class="burger__list-item-text burger__list-item-text--red"
+                  >
+                    <p>Blog</p>
+                  </div>
+                </a>
+                <a href="#" class="burger__list-item">
+                  <div class="burger__list-item-img">
+                    <i class="fa-solid fa-book"></i>
+                  </div>
+                  <div
+                    class="burger__list-item-text burger__list-item-text--red"
+                  >
+                    <p>Knowledge Base</p>
+                  </div>
+                </a>
+                <a href="#" class="burger__list-item">
+                  <div class="burger__list-item-img">
+                    <i class="fa-solid fa-code-pull-request"></i>
+                  </div>
+                  <div
+                    class="burger__list-item-text burger__list-item-text--red"
+                  >
+                    <p>Feature Requests</p>
+                  </div>
+                </a>
+                <a href="#" class="burger__list-item">
+                  <div class="burger__list-item-img">
+                    <i class="fa-solid fa-map"></i>
+                  </div>
+                  <div
+                    class="burger__list-item-text burger__list-item-text--red"
+                  >
+                    <p>Roadmap</p>
+                  </div>
+                </a>
+                <a href="#" class="burger__list-item">
+                  <div class="burger__list-item-img">
+                    <i class="fa-solid fa-bolt"></i>
+                  </div>
+                  <div
+                    class="burger__list-item-text burger__list-item-text--red"
+                  >
+                    <p>Changelog</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <h3 class="burger__list-title">Compare us</h3>
+                <a href="#" class="burger__list-item">
+                  <div class="burger__list-item-img">
+                    <i class="fa-solid fa-down-left-and-up-right-to-center"></i>
+                  </div>
+                  <div
+                    class="burger__list-item-text burger__list-item-text--red"
+                  >
+                    <p>Link Whisper vs Linkilo</p>
+                  </div>
+                </a>
+                <a href="#" class="burger__list-item">
+                  <div class="burger__list-item-img">
+                    <i class="fa-solid fa-down-left-and-up-right-to-center"></i>
+                  </div>
+                  <div
+                    class="burger__list-item-text burger__list-item-text--red"
+                  >
+                    <p>Interlinks Manager vs Linkilo</p>
+                  </div>
+                </a>
+                <a href="#" class="burger__list-item">
+                  <div class="burger__list-item-img">
+                    <i class="fa-solid fa-down-left-and-up-right-to-center"></i>
+                  </div>
+                  <div
+                    class="burger__list-item-text burger__list-item-text--red"
+                  >
+                    <p>Internal Link Juicer vs Linkilo</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <div class="burger__item burger-item-js">
+            <a href="#" class="burger__line">
+              <h2>Contact Us</h2>
+            </a>
+          </div>
+          <div class="burger__action">
+            <a href="#" class="burger__btn">
+              <span>Sign In</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+  <script src="./script.js"></script>
+</html>
